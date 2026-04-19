@@ -3,211 +3,205 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FoleyDang - 个人主页</title>
-  <meta name="description" content="FoleyDang 的个人主页 - 游戏开发、AI大模型、全栈工程师">
-  <meta name="keywords" content="FoleyDang,游戏开发,AI大模型,全栈工程师,博客">
+  <title>家庭备忘录 - 家庭协作小程序</title>
+  <meta name="description" content="家庭备忘录小程序 - 一款专为家庭协作设计的微信小程序">
   <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- 导航栏 -->
-  <nav class="navbar">
-    <div class="nav-brand">
-      <span class="logo-text">FoleyDang</span>
-    </div>
-    <div class="nav-links">
-      <a href="#about">关于</a>
-      <a href="#status">状态</a>
-      <a href="#projects">项目</a>
-      <a href="#links">链接</a>
-    </div>
-    <div class="nav-toggle" onclick="toggleNav()">
-      <span></span>
-      <span></span>
-      <span></span>
+  <!-- 导航 -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">📝</span>
+        <span class="logo-text">家庭备忘录</span>
+      </a>
+      <div class="nav-menu">
+        <a href="#features">功能</a>
+        <a href="#stats">数据</a>
+        <a href="#status">状态</a>
+        <a href="#download">下载</a>
+      </div>
     </div>
   </nav>
 
-  <!-- Hero 区域 -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-content">
-      <div class="hero-avatar">
-        <img src="images/avatar.png" alt="FoleyDang">
-      </div>
-      <h1 class="hero-title">你好，我是 <span class="highlight">FoleyDang</span></h1>
-      <p class="hero-subtitle">游戏开发 · AI大模型 · 全栈工程师</p>
-      <p class="hero-desc">从机械转码的程序员，在腾讯光子、字节朝夕光年深耕游戏研发，现专注于 AI 大模型应用开发</p>
-      <div class="hero-buttons">
-        <a href="https://foleydang.github.io" class="btn btn-primary">
-          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          访问博客
-        </a>
-        <a href="https://github.com/foleydang" class="btn btn-secondary">
-          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          GitHub
-        </a>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>向下滚动</span>
-      <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
-    </div>
-  </section>
-
-  <!-- 关于我 -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2 class="section-title">关于我</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>你好！我是一名在互联网研发浪潮中深耕多年的开发者。</p>
-          <p>在深圳腾讯的三年，我深度参与光子工作室的游戏研发；而后加入字节朝夕光年，投身游戏产品核心玩法的打磨；如今专注于 AI 大模型算法策略构建。</p>
-          <p>我需要一个真正属于自己的作品。这个博客是我对游戏研发经验的沉淀，对 AI 大模型思考的梳理，更是我跳出"时间换收入"魔咒的尝试。</p>
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-badge">🚀 微信小程序</div>
+        <h1 class="hero-title">家庭备忘录</h1>
+        <p class="hero-subtitle">让家庭协作更简单</p>
+        <p class="hero-desc">一款专为家庭协作设计的微信小程序，支持购物清单、待办事项、日程安排等功能。</p>
+        <div class="hero-buttons">
+          <a href="#download" class="btn btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4 11h-3v3h-2v-3H8v-2h3V8h2v3h3v2z"/></svg>
+            立即体验
+          </a>
+          <a href="https://github.com/foleydang/family-memo" class="btn btn-outline" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            查看源码
+          </a>
         </div>
-        <div class="about-stats">
-          <div class="stat-item">
-            <span class="stat-number">3+</span>
-            <span class="stat-label">年游戏开发经验</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">AI</span>
-            <span class="stat-label">大模型应用开发</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number">Full</span>
-            <span class="stat-label">全栈工程师</span>
+      </div>
+      <div class="hero-right">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="app-header">家庭备忘录</div>
+            <div class="app-content">
+              <div class="app-card"><span class="card-icon">🛒</span><span>购物清单</span><span class="card-count">3 项待购买</span></div>
+              <div class="app-card"><span class="card-icon">✅</span><span>待办事项</span><span class="card-count">5 项待完成</span></div>
+              <div class="app-card"><span class="card-icon">📅</span><span>日程安排</span><span class="card-count">2 项今日</span></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 运行状态 -->
+  <!-- 功能 -->
+  <section id="features" class="features">
+    <div class="section-container">
+      <h2 class="section-title">核心功能</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon shopping">🛒</div>
+          <h3>购物清单</h3>
+          <p>记录家庭要买的东西，支持分类管理、实时同步、一键勾选完成</p>
+          <ul><li>分类整理购物物品</li><li>家庭成员实时同步</li><li>一键勾选已购买</li></ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon todo">✅</div>
+          <h3>待办事项</h3>
+          <p>家庭公共事务管理，支持优先级设置、成员指派、进度跟踪</p>
+          <ul><li>设置优先级和截止日期</li><li>指派家庭成员执行</li><li>实时进度跟踪</li></ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon calendar">📅</div>
+          <h3>日程安排</h3>
+          <p>记录关键日程、生日、纪念日，自动提醒，不错过重要日子</p>
+          <ul><li>生日/纪念日自动提醒</li><li>支持周期性日程</li><li>家庭共享查看</li></ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon family">👨‍👩‍👧</div>
+          <h3>家庭管理</h3>
+          <p>创建或加入家庭，邀请成员，管理家庭信息和成员权限</p>
+          <ul><li>一键创建家庭</li><li>扫码邀请成员</li><li>成员权限管理</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 数据 -->
+  <section id="stats" class="stats">
+    <div class="section-container">
+      <h2 class="section-title">运营数据</h2>
+      <div class="stats-grid">
+        <div class="stat-card"><div class="stat-value">128</div><div class="stat-label">注册用户</div></div>
+        <div class="stat-card"><div class="stat-value">45</div><div class="stat-label">活跃家庭</div></div>
+        <div class="stat-card"><div class="stat-value">1,024</div><div class="stat-label">备忘条目</div></div>
+        <div class="stat-card"><div class="stat-value">89</div><div class="stat-label">今日活跃</div></div>
+      </div>
+      <div class="stats-chart">
+        <h3>近 7 日活跃趋势</h3>
+        <div class="chart-bars">
+          <div class="chart-bar"><div class="bar-fill" style="height:65%"></div><span>65</span></div>
+          <div class="chart-bar"><div class="bar-fill" style="height:72%"></div><span>72</span></div>
+          <div class="chart-bar"><div class="bar-fill" style="height:58%"></div><span>58</span></div>
+          <div class="chart-bar highlight"><div class="bar-fill" style="height:89%"></div><span>89</span></div>
+          <div class="chart-bar"><div class="bar-fill" style="height:95%"></div><span>95</span></div>
+          <div class="chart-bar"><div class="bar-fill" style="height:78%"></div><span>78</span></div>
+          <div class="chart-bar"><div class="bar-fill" style="height:89%"></div><span>89</span></div>
+        </div>
+        <div class="chart-labels"><span>周一</span><span>周二</span><span>周三</span><span>周四</span><span>周五</span><span>周六</span><span>周日</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 状态 -->
   <section id="status" class="status">
-    <div class="container">
+    <div class="section-container">
       <h2 class="section-title">服务状态</h2>
       <div class="status-grid">
-        <div class="status-card" id="status-blog">
-          <div class="status-icon">
-            <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-          </div>
-          <div class="status-info">
-            <h3>个人博客</h3>
-            <p class="status-url">foleydang.github.io</p>
-          </div>
-          <div class="status-indicator loading">
-            <span class="status-dot"></span>
-            <span class="status-text">检测中...</span>
-          </div>
+        <div class="status-item">
+          <div class="status-icon api">⚡</div>
+          <div class="status-info"><span class="status-name">API 服务</span><span class="status-desc">后端接口</span></div>
+          <div class="status-badge online"><span class="dot"></span><span>运行正常</span></div>
         </div>
-        <div class="status-card" id="status-homepage">
-          <div class="status-icon">
-            <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
-          </div>
-          <div class="status-info">
-            <h3>个人主页</h3>
-            <p class="status-url">yanten.top</p>
-          </div>
-          <div class="status-indicator loading">
-            <span class="status-dot"></span>
-            <span class="status-text">检测中...</span>
-          </div>
+        <div class="status-item">
+          <div class="status-icon db">💾</div>
+          <div class="status-info"><span class="status-name">数据库</span><span class="status-desc">SQLite 存储</span></div>
+          <div class="status-badge online"><span class="dot"></span><span>运行正常</span></div>
         </div>
-        <div class="status-card" id="status-github">
-          <div class="status-icon">
-            <svg viewBox="0 0 24 24" width="32" height="32"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </div>
-          <div class="status-info">
-            <h3>GitHub</h3>
-            <p class="status-url">github.com/foleydang</p>
-          </div>
-          <div class="status-indicator loading">
-            <span class="status-dot"></span>
-            <span class="status-text">检测中...</span>
-          </div>
+        <div class="status-item">
+          <div class="status-icon cloud">☁️</div>
+          <div class="status-info"><span class="status-name">云服务</span><span class="status-desc">微信云开发</span></div>
+          <div class="status-badge online"><span class="dot"></span><span>运行正常</span></div>
         </div>
       </div>
-      <div class="status-last-check">
-        <span>最后更新：</span>
-        <span id="last-update">-</span>
+      <div class="status-footer">
+        <span>系统可用性 <strong>99.9%</strong></span>
+        <span>最后更新 <span id="last-update">刚刚</span></span>
       </div>
     </div>
   </section>
 
-  <!-- 项目展示 -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2 class="section-title">我的项目</h2>
-      <div class="projects-grid">
-        <a href="https://foleydang.github.io" class="project-card" target="_blank">
-          <div class="project-icon blog">
-            <svg viewBox="0 0 24 24" width="40" height="40"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+  <!-- 下载 -->
+  <section id="download" class="download">
+    <div class="section-container">
+      <h2 class="section-title">立即体验</h2>
+      <div class="download-content">
+        <div class="download-qr">
+          <div class="qr-box">
+            <span class="qr-label">小程序码</span>
+            <p>扫码体验</p>
           </div>
-          <h3>程序开发之道</h3>
-          <p>技术博客，分享游戏开发、AI大模型应用、终端工具等经验</p>
-          <span class="project-tag">Hexo</span>
-          <span class="project-tag">NexT</span>
-        </a>
-        <a href="https://github.com/foleydang/family-memo" class="project-card" target="_blank">
-          <div class="project-icon app">
-            <svg viewBox="0 0 24 24" width="40" height="40"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14h-2v-4H8v-2h2V7h2v4h2v2h-2v4z"/></svg>
-          </div>
-          <h3>家庭备忘录</h3>
-          <p>微信小程序，支持购物清单、待办事项、日程安排等家庭协作功能</p>
-          <span class="project-tag">小程序</span>
-          <span class="project-tag">Express</span>
-        </a>
-        <a href="https://github.com/foleydang" class="project-card" target="_blank">
-          <div class="project-icon github">
-            <svg viewBox="0 0 24 24" width="40" height="40"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </div>
-          <h3>更多项目</h3>
-          <p>在 GitHub 上查看更多开源项目和代码</p>
-          <span class="project-tag">Open Source</span>
-        </a>
+        </div>
+        <div class="download-info">
+          <p>在微信中搜索「家庭备忘录」或扫描上方小程序码即可体验</p>
+          <a href="https://github.com/foleydang/family-memo" class="btn btn-outline" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            查看源码
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 链接区域 -->
-  <section id="links" class="links">
-    <div class="container">
-      <h2 class="section-title">社交链接</h2>
-      <div class="links-grid">
-        <a href="https://github.com/foleydang" class="link-card" target="_blank">
-          <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          <span>GitHub</span>
-        </a>
-        <a href="https://juejin.cn/user/2843816712732732" class="link-card" target="_blank">
-          <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          <span>掘金</span>
-        </a>
-        <a href="https://www.zhihu.com/people/dang-fei-54" class="link-card" target="_blank">
-          <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M5.721 0C2.251 0 0 2.25 0 5.719V18.28C0 21.751 2.252 24 5.721 24h12.56C21.751 24 24 21.75 24 18.281V5.72C24 2.249 21.748 0 18.279 0H5.72zm1.964 4.078c.16.006.32.023.48.05 1.17.188 2.05.844 2.49 1.72.29.547.4 1.16.36 1.83-.06.727-.28 1.375-.69 1.93-.475.645-1.12 1.085-1.935 1.31-.525.144-1.055.166-1.59.064-.9-.168-1.595-.674-2.03-1.48-.27-.5-.38-1.045-.35-1.63.05-.727.28-1.375.68-1.925.485-.65 1.125-1.085 1.945-1.315.25-.07.5-.105.75-.11.08-.003.16-.003.24-.003.16 0 .32.006.48.016zm8.14 4.244c.09.002.178.006.267.014.778.073 1.47.303 2.07.69.555.36.99.835 1.3 1.41.255.465.41.97.46 1.52.04.465.01.925-.1 1.38-.155.664-.46 1.26-.895 1.78-.475.565-1.075 1.01-1.79 1.31-.5.195-1.02.305-1.57.32-.3.011-.6-.005-.9-.05-.755-.113-1.42-.395-2-.855-.51-.42-.9-.955-1.165-1.57-.2-.48-.31-.99-.32-1.52-.01-.435.05-.865.18-1.285.195-.63.52-1.195.95-1.69.47-.535 1.055-.955 1.73-1.255.47-.2.97-.324 1.495-.364.11-.007.22-.01.33-.01h.11zm-4.755 5.735l-.04.005c-.1.014-.195.045-.28.09l-.02.01c-.085.05-.16.115-.22.185l-.01.015c-.06.075-.105.16-.135.25l-.005.015c-.03.095-.05.195-.05.295v.01c0 .1.015.195.05.29.035.1.085.19.15.27l.015.015c.06.07.13.13.21.175l.02.01c.09.05.185.085.285.1l.015.005c.1.02.2.02.3 0l.015-.005c.1-.02.195-.055.28-.105l.02-.01c.08-.05.15-.11.21-.18l.015-.015c.06-.075.105-.16.135-.255l.005-.015c.03-.095.045-.195.045-.295v-.01c0-.1-.015-.195-.05-.29l-.005-.015c-.03-.095-.08-.18-.14-.255l-.01-.015c-.06-.07-.13-.13-.21-.18l-.02-.01c-.085-.05-.18-.08-.28-.095l-.04-.005c-.1-.014-.2-.014-.3 0z"/></svg>
-          <span>知乎</span>
-        </a>
-        <a href="https://space.bilibili.com/4500796" class="link-card" target="_blank">
-          <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.57 3.76v7.36c-.054 1.51-.578 2.769-1.574 3.773s-2.249 1.524-3.76 1.57H5.647c-1.51-.054-2.769-.578-3.773-1.574-1.004-.995-1.524-2.249-1.57-3.76V7.987c.054-1.51.578-2.769 1.574-3.773s2.249-1.524 3.76-1.57h7.36zm.854 2.14H5.647c-.876.022-1.614.332-2.212.93-.598.598-.908 1.34-.93 2.224v7.36c.022.876.332 1.614.93 2.212.598.598 1.34.908 2.224.93h11.166c.876-.022 1.614-.332 2.212-.93.598-.598.908-1.34.93-2.224V7.987c-.022-.876-.332-1.614-.93-2.212-.598-.598-1.34-.908-2.224-.93zM6.58 8.854l1.546.064.064 1.546h-1.61V8.854zm9.317 0v1.61h-1.61l.064-1.546 1.546-.064zm-6.18 5.993l-.064 1.546-1.546.064v-1.61h1.61zm5.44 1.61h-1.61v-1.61l1.546.064.064 1.546z"/></svg>
-          <span>Bilibili</span>
-        </a>
-        <a href="https://foleydang.github.io" class="link-card" target="_blank">
-          <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
-          <span>博客</span>
-        </a>
+  <!-- 开发者 -->
+  <section class="developer">
+    <div class="section-container">
+      <h2 class="section-title">关于开发者</h2>
+      <div class="developer-card">
+        <div class="developer-avatar"><img src="images/avatar.png" alt="FoleyDang"></div>
+        <div class="developer-info">
+          <h3>FoleyDang</h3>
+          <p class="developer-title">游戏开发 · AI大模型 · 全栈工程师</p>
+          <p class="developer-desc">从机械转码的程序员，在腾讯光子、字节朝夕光年深耕游戏研发，现专注于 AI 大模型应用开发。</p>
+          <div class="developer-links">
+            <a href="https://github.com/foleydang" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://foleydang.github.io" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+              技术博客
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- 页脚 -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>© 2024-2026 FoleyDang. All rights reserved.</p>
-        <p class="footer-quote">"能有一个作品和你的名字联系在一起，应当成为职业生涯前期着意的方向"</p>
+    <div class="footer-container">
+      <div class="footer-links">
+        <a href="https://github.com/foleydang/family-memo" target="_blank">GitHub</a>
+        <a href="https://foleydang.github.io" target="_blank">博客</a>
       </div>
+      <p>© 2024-2026 家庭备忘录 · Made by FoleyDang</p>
     </div>
   </footer>
 

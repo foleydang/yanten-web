@@ -1,61 +1,51 @@
-# FoleyDang 个人主页
+# 家庭备忘录 - 小程序官网
 
 网站地址：https://yanten.top
 
-## 功能特性
+## 页面内容
 
-- **个人介绍**：展示个人信息和职业经历
-- **服务状态**：实时检测各服务运行状态
-- **项目展示**：展示主要项目和作品
-- **社交链接**：GitHub、掘金、知乎、Bilibili 等链接
+- **首页介绍**：小程序简介和核心功能展示
+- **功能模块**：购物清单、待办事项、日程安排、家庭管理
+- **运营数据**：注册用户、活跃家庭、备忘条目等统计数据
+- **服务状态**：API、数据库、云服务运行状态
+- **下载引导**：小程序码和微信搜索引导
+- **开发者信息**：开发者介绍和博客链接
 
 ## 部署方式
 
-### 静态部署
-直接将文件部署到任意静态服务器或 CDN。
+### 部署到服务器
 
-### Nginx 配置示例
-```nginx
+```bash
+# 克隆项目
+git clone git@github.com:foleydang/yanten-web.git
+cd yanten-web
+
+# Nginx 配置
 server {
     listen 80;
     server_name yanten.top;
-    root /path/to/yanten-homepage;
+    root /path/to/yanten-web;
     index index.html;
-    
-    location / {
-        try_files $uri $uri/ =404;
-    }
 }
 ```
+
+### GitHub Pages 部署
+
+1. Settings → Pages → Source: master 分支
+2. 域名 DNS 配置 CNAME: yanten.top → foleydang.github.io
 
 ## 目录结构
 
 ```
-yanten-homepage/
+yanten-web/
 ├── index.html      # 主页面
-├── css/
-│   └── style.css   # 样式文件
-├── js/
-│   └── main.js     # 交互脚本
-├── images/
-│   ├── avatar.png  # 头像图片
-│   └── favicon.png # 网站图标
+├── css/style.css   # 样式
+├── js/main.js      # 交互脚本
+├── images/         # 图片资源
 └── README.md
 ```
 
-## 自定义
+## 相关项目
 
-### 修改信息
-编辑 `index.html` 中的个人信息、项目链接等。
-
-### 修改样式
-编辑 `css/style.css` 中的颜色变量：
-```css
-:root {
-  --primary: #49b1f5;      /* 主色调 */
-  --secondary: #ff7242;    /* 辅助色 */
-}
-```
-
-### 添加头像
-替换 `images/avatar.png` 为你的头像图片。
+- [family-memo](https://github.com/foleydang/family-memo) - 小程序源码
+- [blog-source](https://github.com/foleydang/blog-source) - 博客源文件
