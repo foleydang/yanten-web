@@ -201,15 +201,35 @@ body {
 }
 
 /* 备案号样式 */
-.footer备案 {
+.footer-icp {
   margin-top: 8px;
   font-size: 12px;
   color: rgba(255,255,255,0.5);
 }
-.footer备案 a {
+.footer-icp a {
   color: rgba(255,255,255,0.6);
   text-decoration: none;
 }
-.footer备案 a:hover {
+.footer-icp a:hover {
   color: var(--primary);
+}
+.footer-police {
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
+.footer-police a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+.footer-police a:hover {
+  color: var(--primary);
+}
+.footer-police .police-icon {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
 }
