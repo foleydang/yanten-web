@@ -4,10 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yanten备忘录 - 让家庭协作更简单</title>
-  <meta name="description" content="Yanten备忘录小程序 - 一款专为家庭协作设计的微信小程序">
+  
+  <!-- SEO -->
+  <meta name="description" content="Yanten备忘录小程序 - 一款专为家庭协作设计的微信小程序，支持购物清单、待办事项、日程安排，让家人之间的沟通更加便捷高效。">
+  <meta name="keywords" content="Yanten备忘录,家庭备忘录,微信小程序,购物清单,待办事项,日程安排,家庭协作,家庭管理">
+  <meta name="author" content="FoleyDang">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yanten备忘录 - 让家庭协作更简单">
+  <meta property="og:description" content="一款专为家庭协作设计的微信小程序，购物清单、待办事项、日程安排，让家人沟通更便捷。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yanten.top">
+  <meta property="og:image" content="https://yanten.top/images/og-image.png">
+  <meta property="og:site_name" content="Yanten备忘录">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yanten备忘录 - 让家庭协作更简单">
+  <meta name="twitter:description" content="一款专为家庭协作设计的微信小程序">
+  <meta name="twitter:image" content="https://yanten.top/images/og-image.png">
+  
   <link rel="icon" href="images/favicon.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="canonical" href="https://yanten.top">
+  
+  <!-- 字体：使用国内CDN -->
+  <link rel="stylesheet" href="https://fonts.googleapis.cnfonts.net/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
   <!-- 导航 -->
@@ -17,11 +39,19 @@
         <span class="logo-icon">📝</span>
         <span class="logo-text">Yanten备忘录</span>
       </a>
-      <div class="nav-menu">
-        <a href="#features">功能</a>
-        <a href="#preview">预览</a>
-        <a href="#download">体验</a>
-        <a href="#developer">开发者</a>
+      <div class="nav-right">
+        <div class="nav-menu">
+          <a href="#features">功能</a>
+          <a href="#preview">预览</a>
+          <a href="#download">体验</a>
+          <a href="#developer">开发者</a>
+        </div>
+        <button class="theme-toggle" aria-label="切换主题">☀️</button>
+        <button class="nav-toggle" aria-label="菜单">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
   </nav>
@@ -156,7 +186,7 @@
       <div class="download-content">
         <div class="download-qr">
           <div class="qr-box">
-            <img src="images/qr-code.jpg" alt="小程序码" style="width:180px;height:180px;border-radius:12px;">
+            <img src="images/qr-code.jpg" alt="小程序码" width="180" height="180" loading="lazy">
             <span class="qr-label">微信扫码体验</span>
           </div>
         </div>
@@ -188,17 +218,17 @@
     <div class="section-container">
       <h2 class="section-title">关于开发者</h2>
       <div class="developer-card">
-        <div class="developer-avatar"><img src="images/avatar.png" alt="FoleyDang"></div>
+        <div class="developer-avatar"><img src="images/avatar.png" alt="FoleyDang" loading="lazy"></div>
         <div class="developer-info">
           <h3>FoleyDang</h3>
           <p class="developer-title">游戏开发 · AI大模型 · 全栈工程师</p>
           <p class="developer-desc">从机械转码的程序员，在腾讯光子、字节朝夕光年深耕游戏研发，现专注于 AI 大模型应用开发。这是我的一款个人作品，希望能为更多家庭带来便利。</p>
           <div class="developer-links">
-            <a href="https://github.com/foleydang" target="_blank">
+            <a href="https://github.com/foleydang" target="_blank" rel="noopener">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
               GitHub
             </a>
-            <a href="https://foleydang.github.io" target="_blank">
+            <a href="https://foleydang.github.io" target="_blank" rel="noopener">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
               技术博客
             </a>
@@ -213,15 +243,20 @@
     <div class="footer-container">
       <p class="footer-copyright">© 2024-2026 Yanten备忘录 · Made with ❤️ by FoleyDang</p>
       <p class="footer-beian">
-        <a href="https://beian.miit.gov.cn" target="_blank">沪ICP备2026014711号-2</a>
+        <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener">沪ICP备2026014711号-2</a>
         <span class="beian-divider">|</span>
-        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011002007900" target="_blank">
-          <img src="images/police-badge.png" alt="公安备案" class="police-icon">
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011002007900" target="_blank" rel="noopener">
+          <img src="images/police-badge.png" alt="公安备案" class="police-icon" loading="lazy">
           沪公网安备31011002007900号
         </a>
       </p>
     </div>
   </footer>
+
+  <!-- 返回顶部按钮 -->
+  <button class="back-to-top" aria-label="返回顶部">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>
