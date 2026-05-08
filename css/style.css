@@ -211,8 +211,8 @@ body {
   gap: 8px;
 }
 .footer-beian a {
-  color: #999;
-  text-decoration: none;
+  color: #999 !important;
+  text-decoration: none !important;
   display: inline-flex;
   align-items: center;
   gap: 4px;
