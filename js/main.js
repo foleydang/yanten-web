@@ -1,3 +1,9 @@
+// 先定义变量（避免引用未定义变量导致JS报错）
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+const themeToggle = document.querySelector('.theme-toggle');
+const backToTop = document.querySelector('.back-to-top');
+
 // 平滑滚动
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
@@ -6,16 +12,13 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     if (target) {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       // 关闭移动端菜单
-      navMenu.classList.remove('active');
-      navToggle.classList.remove('active');
+      if (navMenu) navMenu.classList.remove('active');
+      if (navToggle) navToggle.classList.remove('active');
     }
   });
 });
 
 // 汉堡菜单
-const navToggle = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('.nav-menu');
-
 if (navToggle && navMenu) {
   navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active');
@@ -24,8 +27,6 @@ if (navToggle && navMenu) {
 }
 
 // 返回顶部按钮
-const backToTop = document.querySelector('.back-to-top');
-
 if (backToTop) {
   // 监听滚动
   window.addEventListener('scroll', () => {
@@ -43,7 +44,6 @@ if (backToTop) {
 }
 
 // 主题切换
-const themeToggle = document.querySelector('.theme-toggle');
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 // 初始化主题
